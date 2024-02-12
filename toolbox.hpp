@@ -3,7 +3,7 @@
 
 #include <intrin.h>
 
-namespace tb
+namespace toolbox
 {
 
 template<typename... Args1, typename... Args2>
@@ -30,6 +30,6 @@ void timeit(size_t iters, uint64_t& elapsed, void(*func)(Args1...), Args2&& ...a
     elapsed = (__rdtsc() - begin) / NUM_ITERATIONS;
 }
 
-} // namespace tb
+} // namespace toolbox
 
 #endif // INCLUDED_TOOLBOX_HPP
